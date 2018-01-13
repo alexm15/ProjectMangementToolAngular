@@ -1,0 +1,16 @@
+<div ng-hide="localStorage.isEmpty()" ng-controller="mainController" ng-show="getList()">
+    <h3>Trello List</h3>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <p id="listName" class="text-left">{{todoList.name}}</p>        
+        </div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a class="list-group-item" ng-repeat="card in todoList.cards">
+                    <h4 class="list-group-item-heading">{{card.name}}</h4> 
+                    <p class="list-group-item-text">{{card.desc}}</p>
+                </a>
+            </div>
+        </div>
+    </div>    
+</div>

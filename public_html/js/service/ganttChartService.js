@@ -20,7 +20,7 @@ app.service("ganttChart", function () {
         data.addColumn('string', 'Dependencies');
 
         var options = {
-            height: 400
+            height: 600
         };
 
         var trelloCards = taskList.cards;
